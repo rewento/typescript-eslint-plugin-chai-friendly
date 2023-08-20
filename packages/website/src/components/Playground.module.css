@@ -1,0 +1,90 @@
+:root {
+  --playground-main-color: var(--ifm-background-surface-color);
+  --playground-secondary-color: var(--ifm-color-emphasis-100);
+}
+
+.options {
+  background: var(--playground-main-color);
+  overflow: auto;
+  z-index: 1;
+}
+
+.sourceCode {
+  height: 100%;
+  border: 1px solid var(--playground-secondary-color);
+}
+
+.codeBlocks {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+  height: 100%;
+  width: calc(100vw - 20rem);
+}
+
+.astViewer {
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--playground-secondary-color);
+  padding: 0;
+  overflow: auto;
+  word-wrap: initial;
+  white-space: nowrap;
+  background: var(--code-editor-bg);
+}
+
+.codeContainer {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  height: calc(100% - var(--ifm-navbar-height));
+  top: var(--ifm-navbar-height);
+  z-index: calc(var(--ifm-z-index-fixed) - 1);
+}
+
+.playgroundInfoHeader {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.tabCode {
+  height: calc(100% - 41px);
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (width <= 996px) {
+  .codeContainer {
+    display: block;
+    width: 100%;
+    position: static;
+  }
+
+  .codeBlocks {
+    display: block;
+    width: 100%;
+  }
+
+  .options {
+    display: none;
+  }
+
+  .tabCode {
+    height: calc(30rem - 3.2rem);
+  }
+
+  .astViewer,
+  .sourceCode {
+    height: 30rem;
+  }
+
+  .astViewer {
+    height: auto;
+  }
+}

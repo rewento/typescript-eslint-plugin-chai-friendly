@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AST Fixtures declaration TSEnumDeclaration declare TSESTree - AST 1`] = `
+Program {
+  type: "Program",
+  body: [
+    TSEnumDeclaration {
+      type: "TSEnumDeclaration",
+      const: false,
+      declare: true,
+      id: Identifier {
+        type: "Identifier",
+        decorators: [],
+        name: "Foo",
+        optional: false,
+
+        range: [13, 16],
+        loc: {
+          start: { column: 13, line: 1 },
+          end: { column: 16, line: 1 },
+        },
+      },
+      members: [],
+
+      range: [0, 19],
+      loc: {
+        start: { column: 0, line: 1 },
+        end: { column: 19, line: 1 },
+      },
+    },
+  ],
+  sourceType: "script",
+
+  range: [0, 20],
+  loc: {
+    start: { column: 0, line: 1 },
+    end: { column: 0, line: 2 },
+  },
+}
+`;
