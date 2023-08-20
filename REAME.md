@@ -1,0 +1,1 @@
+Consider including a Chai-friendly version of the [no-unused-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/rules/no-unused-expressions.ts) rule of [typescript-eslint](https://github.com/typescript-eslint) in the [eslint-plugin-chai-friendly](https://github.com/ihordiachenko/eslint-plugin-chai-friendly) library.

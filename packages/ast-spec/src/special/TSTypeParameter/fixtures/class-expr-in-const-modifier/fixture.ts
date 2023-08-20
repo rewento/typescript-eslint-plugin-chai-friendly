@@ -1,1 +1,0 @@
-(class <in const T> {});

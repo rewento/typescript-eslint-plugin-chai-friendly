@@ -1,1 +1,0 @@
-@decl interface Test {}

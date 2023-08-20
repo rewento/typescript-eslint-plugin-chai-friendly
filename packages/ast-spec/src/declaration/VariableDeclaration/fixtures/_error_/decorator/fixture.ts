@@ -1,1 +1,0 @@
-@decl type Test = {};
